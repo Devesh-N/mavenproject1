@@ -1,0 +1,15 @@
+## YAML Template.
+version: 0.2
+phases:
+    build:
+        commands:
+            - echo entered the build phase...
+            - mvn clean packages 
+    post_build:
+        commands:
+            - echo build completed succesfully 
+artifacts:
+    files:
+       - target/mavenproject1-1.0-SNAPSHOT.jar
+    discard-paths: yes 
+    
